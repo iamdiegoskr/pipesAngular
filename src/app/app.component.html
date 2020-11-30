@@ -142,10 +142,42 @@
                     <td> {{fecha | date:'shortDate'}} </td>
                 </tr>
 
-                <tr>
+                <!-- <tr>
                     <td> {{fecha}} </td>
                     <td> date:'MMMM - dd'</td>
                     <td> {{fecha | date:'MMMM - dd'}} </td>
+                </tr> -->
+
+                <!-- <tr>
+                    <td> {{fecha}} </td>
+                    <td> fecha | date:'MMMM - dd':'':'en'</td>
+                    <td> {{fecha | date:'MMMM - dd':'':'en'}} </td>
+                </tr> -->
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td>
+                        <!-- fecha | date:'MMMM - dd':'':'{{idioma}}' -->
+                        <!-- <br> -->
+                        <button class="btn btn-primary mr-1" (click)="changeLanguage('es')">Español</button>
+                        <button class="btn btn-secondary mr-1" (click)="changeLanguage('en')">Ingles</button>
+                        <button class="btn btn-danger" (click)="changeLanguage('fr')">Frances</button>
+                    </td>
+
+                    <td> {{fecha | date:'MMMM - dd':'':idioma}}</td>
+                </tr>
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td>
+                        <!-- fecha | date:'MMMM - dd':'':'{{idioma}}' -->
+                        <!-- <br> -->
+                        <button class="btn btn-primary mr-1" (click)="idioma='es'">Español</button>
+                        <button class="btn btn-secondary mr-1" (click)="idioma='en'">Ingles</button>
+                        <button class="btn btn-danger" (click)="idioma='fr'">Frances</button>
+                    </td>
+
+                    <td> {{fecha | date:'MMMM - dd':'':idioma}}</td>
                 </tr>
 
 
