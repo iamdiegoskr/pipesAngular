@@ -11,4 +11,29 @@ export class AppComponent {
 
   myarr = [1,2,3,4,5,6,7,8,9,10];
 
+  PI : number = Math.PI;
+
+  porcentaje : number = 0.245;
+
+  salario : number = 1234.5;
+
+  fecha : Date = new Date()
+
+
+  valorPromesa = new Promise<string>( (resolve) => {
+      setTimeout(() => {
+        resolve("La data esta lista para usarse")
+      }, 5000);
+  } )
+
+  heroe = {
+    nombre : 'Diegoflow',
+    clave : 'maravisha',
+    edad : 22,
+    direccion : {
+      calle : 'calle 22',
+      barrio : 'Limonar'
+    }
+  }
+
 }

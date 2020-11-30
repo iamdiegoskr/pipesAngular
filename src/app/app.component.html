@@ -43,6 +43,112 @@
                     <td> {{ myarr | slice : 1:5 }} </td>
                 </tr>
 
+
+                <tr>
+                    <td> {{PI}} </td>
+                    <td> number : '1.0-0' </td>
+                    <td> {{PI | number : '1.0-0' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{PI}} </td>
+                    <td> number : '1.1-1' </td>
+                    <td> {{PI | number : '1.1-1' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{PI}} </td>
+                    <td> number : '1.1-5' </td>
+                    <td> {{PI | number : '1.1-5' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{PI}} </td>
+                    <td> number : '3.0-0' </td>
+                    <td> {{PI | number : '3.0-0' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{PI}} </td>
+                    <td> number : '.0-2' </td>
+                    <td> {{PI | number : '.0-2' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{porcentaje}} </td>
+                    <td> percent </td>
+                    <td> {{porcentaje | percent }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{porcentaje}} </td>
+                    <td> percent:'2.2-2' </td>
+                    <td> {{porcentaje | percent:'2.2-2' }} </td>
+                </tr>
+
+
+                <tr>
+                    <td> {{salario}} </td>
+                    <td> currency </td>
+                    <td> {{salario | currency }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{salario}} </td>
+                    <td> currency:'EUR' </td>
+                    <td> {{salario | currency:'EUR' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{salario}} </td>
+                    <td> currency:'COP' COLOMBIA </td>
+                    <td> {{salario | currency:'COP' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{salario}} </td>
+                    <td> currency:'CLF'</td>
+                    <td> {{salario | currency:'CLF' }} </td>
+                </tr>
+
+
+                <tr>
+                    <td> {{salario}} </td>
+                    <td> currency:'CAD $':'symbol':'.0-0'</td>
+                    <td> {{salario | currency:'CAD $':'symbol':'.0-0'}} </td>
+                </tr>
+
+                <tr>
+                    <td> {{valorPromesa}} </td>
+                    <td> Async </td>
+                    <td> {{valorPromesa | async }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td> Date </td>
+                    <td> {{fecha | date }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td> date:'medium' </td>
+                    <td> {{fecha | date:'medium'}} </td>
+                </tr>
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td> date:'shortDate' </td>
+                    <td> {{fecha | date:'shortDate'}} </td>
+                </tr>
+
+                <tr>
+                    <td> {{fecha}} </td>
+                    <td> date:'MMMM - dd'</td>
+                    <td> {{fecha | date:'MMMM - dd'}} </td>
+                </tr>
+
+
             </tbody>
         </table>
 
@@ -52,6 +158,18 @@
         <ul>
             <li *ngFor="let item of myarr | slice:4:20"> {{item}} </li>
         </ul>
+
+
+
+        <h3>JSON</h3>
+        <hr>
+        <div class="row mb-5">
+            <div class="col">
+                <pre>
+                {{heroe | json }}
+                </pre>
+            </div>
+        </div>
 
     </div>
 </div>
