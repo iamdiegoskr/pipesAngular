@@ -23,6 +23,8 @@ export class AppComponent {
 
   idioma : string = 'es';
 
+  activar : boolean = false;
+
   videoURL : string = "https://www.youtube.com/embed/sOtsmM9KCnw";
 
 

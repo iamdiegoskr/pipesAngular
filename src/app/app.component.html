@@ -194,6 +194,15 @@
 
 
 
+                <tr>
+                    <td> {{nombre}} </td>
+                    <td>
+                        Contraseña : {{activar}}
+                        <button class="btn btn-info btn-block" (click)="activar=!activar">Activar/Desaticar</button>
+                    </td>
+                    <td> {{nombre | pass:activar}} </td>
+                </tr>
+
 
             </tbody>
         </table>
