@@ -5,10 +5,12 @@ import '@angular/common/locales/global/fr';
 
 
 import { AppComponent } from './app.component';
+import { CapitalizadoskrPipe } from './pipes/capitalizadoskr.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CapitalizadoskrPipe
   ],
   imports: [
     BrowserModule
