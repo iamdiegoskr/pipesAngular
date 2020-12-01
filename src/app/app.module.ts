@@ -6,11 +6,13 @@ import '@angular/common/locales/global/fr';
 
 import { AppComponent } from './app.component';
 import { CapitalizadoskrPipe } from './pipes/capitalizadoskr.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadoskrPipe
+    CapitalizadoskrPipe,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule
